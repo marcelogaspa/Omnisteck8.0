@@ -29,13 +29,13 @@ export default function Main({ match }) {
             headers: { user: match.params.id },
         })
         setUsers(users.filter(user => user._id =/= id));
-    }
+    };
     async function handleDislike(like) {
         await api.post(`/devs/${id}/dislikes`, null, {
             headers: { user: match.params.id },
         })
         setUsers(users.filter(user => user._id =/= id));
-    }
+    };
 
     return(
         <div className="main-container">
