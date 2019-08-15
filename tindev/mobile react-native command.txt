@@ -1,0 +1,700 @@
+﻿Process to start the development code for mobile with react native:
+procedure to install virtual environment for mobile emulator access:
+http://docs.rocketseat.dev => Getin the link Ambiente React Native.  
+
+PS C:\Users\celo_\Documents\GitHub\Omnisteck8.0\tindev\tindev> npx react-native init mobiletindev
+PS C:\Users\celo_\Documents\GitHub\Omnisteck8.0\tindev\tindev> cd .
+cd : Não é possível localizar o caminho 'C:\Users\celo_\Documents\GitHub\Omnisteck8.0\tindev\tindev' porque ele não
+existe.
+No linha:1 caractere:1
++ cd .
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\celo_\...0\tindev\tindev:String) [Set-Location], ItemNotFoundE
+   xception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\celo_\Documents\GitHub\Omnisteck8.0\tindev\tindev> cd ..
+PS C:\Users\celo_\Documents\GitHub\Omnisteck8.0\tindev> çsls
+çsls : O termo 'çsls' não é reconhecido como nome de cmdlet, função, arquivo de script ou programa operável. Verifique
+a grafia do nome ou, se um caminho tiver sido incluído, veja se o caminho está correto e tente novamente.
+No linha:1 caractere:1
++ çsls
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (çsls:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\celo_\Documents\GitHub\Omnisteck8.0\tindev> ls
+
+
+    Diretório: C:\Users\celo_\Documents\GitHub\Omnisteck8.0\tindev
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       08/08/2019     21:14                backend
+d-----       08/08/2019     22:48                frontend
+-a----       09/08/2019     22:09          22521 mobile react-native command.txt
+
+
+PS C:\Users\celo_\Documents\GitHub\Omnisteck8.0\tindev> npx react-native init mobiletindev
+This will walk you through creating a new React Native project in C:\Users\celo_\Documents\GitHub\Omnisteck8.0\tindev\mobiletindev
+Using yarn v1.16.0
+Installing react-native...
+yarn add v1.16.0
+info No lockfile found.
+[1/4] Resolving packages...
+warning react-native > create-react-class > fbjs > core-js@1.2.7: core-js@<2.6.8 is no longer maintained. Please, upgrade to core-js@3 or at least to actual version of core-js@2.
+[2/4] Fetching packages...
+info fsevents@1.2.9: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.9" is an optional dependency and failed compatibility check. Excluding it from installation.
+[3/4] Linking dependencies...
+warning "react-native > metro-react-native-babel-transformer@0.54.1" has unmet peer dependency "@babel/core@*".
+warning " > react-native@0.60.4" has unmet peer dependency "react@16.8.6".
+[4/4] Building fresh packages...
+success Saved lockfile.
+success Saved 387 new dependencies.
+info Direct dependencies
+└─ react-native@0.60.4
+info All dependencies
+├─ @babel/generator@7.5.5
+├─ @babel/helper-builder-binary-assignment-operator-visitor@7.1.0
+├─ @babel/helper-builder-react-jsx@7.3.0
+├─ @babel/helper-call-delegate@7.4.4
+├─ @babel/helper-define-map@7.5.5
+├─ @babel/helper-explode-assignable-expression@7.1.0
+├─ @babel/helper-hoist-variables@7.4.4
+├─ @babel/helper-module-transforms@7.5.5
+├─ @babel/helper-regex@7.5.5
+├─ @babel/helper-remap-async-to-generator@7.1.0
+├─ @babel/helper-wrap-function@7.2.0
+├─ @babel/helpers@7.5.5
+├─ @babel/highlight@7.5.0
+├─ @babel/parser@7.5.5
+├─ @babel/plugin-external-helpers@7.2.0
+├─ @babel/plugin-proposal-export-default-from@7.5.2
+├─ @babel/plugin-syntax-class-properties@7.2.0
+├─ @babel/plugin-syntax-dynamic-import@7.2.0
+├─ @babel/plugin-syntax-export-default-from@7.2.0
+├─ @babel/plugin-syntax-nullish-coalescing-operator@7.2.0
+├─ @babel/plugin-syntax-object-rest-spread@7.2.0
+├─ @babel/plugin-syntax-optional-catch-binding@7.2.0
+├─ @babel/plugin-syntax-optional-chaining@7.2.0
+├─ @babel/plugin-syntax-typescript@7.3.3
+├─ @babel/plugin-transform-async-to-generator@7.5.0
+├─ @babel/plugin-transform-block-scoped-functions@7.2.0
+├─ @babel/plugin-transform-exponentiation-operator@7.2.0
+├─ @babel/plugin-transform-member-expression-literals@7.2.0
+├─ @babel/plugin-transform-object-assign@7.2.0
+├─ @babel/plugin-transform-object-super@7.5.5
+├─ @babel/plugin-transform-property-literals@7.2.0
+├─ @babel/plugin-transform-react-jsx-source@7.5.0
+├─ @babel/plugin-transform-regenerator@7.4.5
+├─ @babel/plugin-transform-runtime@7.5.5
+├─ @babel/plugin-transform-sticky-regex@7.2.0
+├─ @babel/plugin-transform-typescript@7.5.5
+├─ @babel/plugin-transform-unicode-regex@7.4.4
+├─ @babel/register@7.5.5
+├─ @babel/runtime@7.5.5
+├─ @cnakazawa/watch@1.0.3
+├─ @hapi/address@2.0.0
+├─ @hapi/hoek@6.2.4
+├─ @hapi/joi@15.1.0
+├─ @hapi/marker@1.0.0
+├─ @hapi/topo@3.1.3
+├─ @jest/fake-timers@24.8.0
+├─ @react-native-community/cli-platform-android@2.8.3
+├─ @react-native-community/cli-platform-ios@2.8.3
+├─ @react-native-community/cli@2.8.3
+├─ @types/istanbul-lib-report@1.1.1
+├─ @types/istanbul-reports@1.1.1
+├─ @types/stack-utils@1.0.1
+├─ @types/yargs@12.0.12
+├─ abort-controller@3.0.0
+├─ accepts@1.3.7
+├─ ansi-colors@1.1.0
+├─ ansi-cyan@0.1.1
+├─ ansi-escapes@3.2.0
+├─ ansi-fragments@0.2.1
+├─ ansi-gray@0.1.1
+├─ ansi-red@0.1.1
+├─ ansi-regex@4.1.0
+├─ argparse@1.0.10
+├─ arr-flatten@1.1.0
+├─ array-filter@0.0.1
+├─ array-map@0.0.0
+├─ array-reduce@0.0.0
+├─ array-slice@0.2.3
+├─ art@0.10.3
+├─ asap@2.0.6
+├─ assign-symbols@1.0.0
+├─ astral-regex@1.0.0
+├─ async-limiter@1.0.1
+├─ async@2.6.3
+├─ atob@2.1.2
+├─ babel-plugin-dynamic-import-node@2.3.0
+├─ babel-plugin-syntax-trailing-function-commas@7.0.0-beta.0
+├─ balanced-match@1.0.0
+├─ base@0.11.2
+├─ base64-js@1.3.1
+├─ basic-auth@2.0.1
+├─ big-integer@1.6.44
+├─ bplist-creator@0.0.7
+├─ bplist-parser@0.1.1
+├─ brace-expansion@1.1.11
+├─ braces@2.3.2
+├─ bser@2.1.0
+├─ buffer-crc32@0.2.13
+├─ bytes@3.0.0
+├─ cache-base@1.0.1
+├─ caller-callsite@2.0.0
+├─ caller-path@2.0.0
+├─ capture-exit@2.0.0
+├─ chardet@0.4.2
+├─ ci-info@2.0.0
+├─ class-utils@0.3.6
+├─ cli-spinners@2.2.0
+├─ cli-width@2.2.0
+├─ cliui@3.2.0
+├─ clone@1.0.4
+├─ code-point-at@1.1.0
+├─ collection-visit@1.0.0
+├─ color-convert@1.9.3
+├─ color-name@1.1.3
+├─ color-support@1.1.3
+├─ colorette@1.1.0
+├─ commander@2.20.0
+├─ commondir@1.0.1
+├─ compressible@2.0.17
+├─ compression@1.7.4
+├─ concat-map@0.0.1
+├─ concat-stream@1.6.2
+├─ convert-source-map@1.6.0
+├─ copy-descriptor@0.1.1
+├─ core-js@2.6.9
+├─ core-util-is@1.0.2
+├─ cosmiconfig@5.2.1
+├─ create-react-class@15.6.3
+├─ cross-spawn@5.1.0
+├─ debug@2.6.9
+├─ decode-uri-component@0.2.0
+├─ deepmerge@3.3.0
+├─ defaults@1.0.3
+├─ define-properties@1.1.3
+├─ denodeify@1.2.1
+├─ destroy@1.0.4
+├─ dom-walk@0.1.1
+├─ ee-first@1.1.1
+├─ encoding@0.1.12
+├─ end-of-stream@1.4.1
+├─ envinfo@7.3.1
+├─ error-ex@1.3.2
+├─ errorhandler@1.5.1
+├─ esprima@4.0.1
+├─ etag@1.8.1
+├─ event-target-shim@5.0.1
+├─ eventemitter3@3.1.2
+├─ expand-brackets@2.1.4
+├─ external-editor@2.2.0
+├─ extglob@2.0.4
+├─ fancy-log@1.3.3
+├─ fbjs-css-vars@1.0.2
+├─ fbjs-scripts@1.2.0
+├─ figures@2.0.0
+├─ fill-range@4.0.0
+├─ finalhandler@1.1.2
+├─ find-cache-dir@2.1.0
+├─ for-in@1.0.2
+├─ fresh@0.5.2
+├─ fs-extra@7.0.1
+├─ fs.realpath@1.0.0
+├─ function-bind@1.1.1
+├─ get-stream@4.1.0
+├─ glob@7.1.4
+├─ global@4.4.0
+├─ growly@1.3.0
+├─ has-symbols@1.0.0
+├─ has-value@1.0.0
+├─ has-values@1.0.0
+├─ hermesvm@0.1.0
+├─ hosted-git-info@2.8.2
+├─ http-errors@1.7.3
+├─ iconv-lite@0.4.24
+├─ image-size@0.6.3
+├─ import-fresh@2.0.0
+├─ imurmurhash@0.1.4
+├─ inflight@1.0.6
+├─ inherits@2.0.4
+├─ inquirer@3.3.0
+├─ invert-kv@1.0.0
+├─ is-accessor-descriptor@1.0.0
+├─ is-arrayish@0.2.1
+├─ is-ci@2.0.0
+├─ is-data-descriptor@1.0.0
+├─ is-descriptor@1.0.2
+├─ is-directory@0.3.1
+├─ is-plain-object@2.0.4
+├─ is-promise@2.1.0
+├─ is-windows@1.0.2
+├─ isarray@1.0.0
+├─ isexe@2.0.0
+├─ jest-get-type@24.8.0
+├─ jest-message-util@24.8.0
+├─ jest-mock@24.8.0
+├─ jest-util@24.8.0
+├─ jest-validate@24.8.0
+├─ jetifier@1.6.3
+├─ js-tokens@4.0.0
+├─ js-yaml@3.13.1
+├─ jsc-android@245459.0.0
+├─ jsesc@2.5.2
+├─ json-parse-better-errors@1.0.2
+├─ json-stable-stringify@1.0.1
+├─ json5@2.1.0
+├─ jsonfile@4.0.0
+├─ kind-of@3.2.2
+├─ klaw@1.3.1
+├─ lcid@1.0.0
+├─ leven@2.1.0
+├─ load-json-file@2.0.0
+├─ locate-path@3.0.0
+├─ lodash@4.17.15
+├─ log-symbols@2.2.0
+├─ logkitty@0.5.0
+├─ loose-envify@1.4.0
+├─ lru-cache@4.1.5
+├─ make-dir@2.1.0
+├─ makeerror@1.0.11
+├─ map-age-cleaner@0.1.3
+├─ map-visit@1.0.0
+├─ mem@1.1.0
+├─ metro-babel7-plugin-react-transform@0.54.1
+├─ metro-config@0.54.1
+├─ metro-inspector-proxy@0.54.1
+├─ metro-minify-uglify@0.54.1
+├─ metro-react-native-babel-transformer@0.54.1
+├─ metro-source-map@0.55.0
+├─ metro-symbolicate@0.55.0
+├─ metro@0.54.1
+├─ mime-db@1.40.0
+├─ mime-types@2.1.11
+├─ mime@2.4.4
+├─ min-document@2.19.0
+├─ minimatch@3.0.4
+├─ minimist@1.2.0
+├─ mixin-deep@1.3.2
+├─ mkdirp@0.5.1
+├─ morgan@1.9.1
+├─ ms@2.1.2
+├─ mute-stream@0.0.7
+├─ nanomatch@1.2.13
+├─ negotiator@0.6.2
+├─ nice-try@1.0.5
+├─ node-fetch@2.6.0
+├─ node-int64@0.4.0
+├─ node-modules-regexp@1.0.0
+├─ node-notifier@5.4.1
+├─ normalize-package-data@2.5.0
+├─ normalize-path@2.1.1
+├─ number-is-nan@1.0.1
+├─ ob1@0.55.0
+├─ object-assign@4.1.1
+├─ object-copy@0.1.0
+├─ object-keys@1.1.1
+├─ object.assign@4.1.0
+├─ on-headers@1.0.2
+├─ once@1.4.0
+├─ onetime@2.0.1
+├─ open@6.4.0
+├─ options@0.0.6
+├─ ora@3.4.0
+├─ os-locale@2.1.0
+├─ os-tmpdir@1.0.2
+├─ p-defer@1.0.0
+├─ p-is-promise@2.1.0
+├─ p-limit@2.2.0
+├─ p-locate@3.0.0
+├─ p-try@2.2.0
+├─ parse-json@4.0.0
+├─ parse-node-version@1.0.1
+├─ pascalcase@0.1.1
+├─ path-is-absolute@1.0.1
+├─ path-key@2.0.1
+├─ path-parse@1.0.6
+├─ path-type@2.0.0
+├─ pirates@4.0.1
+├─ pkg-dir@3.0.0
+├─ plist@3.0.1
+├─ plugin-error@0.1.2
+├─ posix-character-classes@0.1.1
+├─ pretty-format@24.8.0
+├─ private@0.1.8
+├─ process-nextick-args@2.0.1
+├─ process@0.11.10
+├─ prop-types@15.7.2
+├─ pseudomap@1.0.2
+├─ pump@3.0.0
+├─ range-parser@1.2.1
+├─ react-deep-force-update@1.1.2
+├─ react-devtools-core@3.6.3
+├─ react-is@16.9.0
+├─ react-native@0.60.4
+├─ react-proxy@1.1.8
+├─ read-pkg-up@2.0.0
+├─ read-pkg@2.0.0
+├─ readable-stream@2.3.6
+├─ regenerate-unicode-properties@8.1.0
+├─ regenerator-transform@0.14.1
+├─ regexpu-core@4.5.4
+├─ regjsgen@0.5.0
+├─ regjsparser@0.6.0
+├─ remove-trailing-separator@1.1.0
+├─ repeat-element@1.1.3
+├─ resolve-from@3.0.0
+├─ resolve-url@0.2.1
+├─ resolve@1.12.0
+├─ restore-cursor@2.0.0
+├─ ret@0.1.15
+├─ rimraf@2.6.3
+├─ rsvp@4.8.5
+├─ run-async@2.3.0
+├─ rx-lite-aggregates@4.0.8
+├─ rx-lite@4.0.8
+├─ rxjs@5.5.12
+├─ safer-buffer@2.1.2
+├─ sane@4.1.0
+├─ sax@1.2.4
+├─ scheduler@0.14.0
+├─ semver@5.7.0
+├─ send@0.17.1
+├─ serialize-error@2.1.0
+├─ serve-static@1.14.1
+├─ set-blocking@2.0.0
+├─ set-value@2.0.1
+├─ setprototypeof@1.1.1
+├─ shebang-regex@1.0.0
+├─ shell-quote@1.6.1
+├─ shellwords@0.1.1
+├─ signal-exit@3.0.2
+├─ simple-plist@1.0.0
+├─ slice-ansi@2.1.0
+├─ slide@1.1.6
+├─ snapdragon-node@2.1.1
+├─ snapdragon-util@3.0.1
+├─ source-map-resolve@0.5.2
+├─ source-map-support@0.5.13
+├─ source-map-url@0.4.0
+├─ spdx-correct@3.1.0
+├─ spdx-exceptions@2.2.0
+├─ split-string@3.1.0
+├─ sprintf-js@1.0.3
+├─ stack-utils@1.0.2
+├─ stacktrace-parser@0.1.6
+├─ static-extend@0.1.2
+├─ statuses@1.5.0
+├─ stream-buffers@2.2.0
+├─ string_decoder@1.1.1
+├─ string-width@2.1.1
+├─ strip-ansi@3.0.1
+├─ strip-bom@3.0.0
+├─ supports-color@5.5.0
+├─ symbol-observable@1.0.1
+├─ temp@0.8.3
+├─ throat@4.1.0
+├─ through@2.3.8
+├─ through2@2.0.5
+├─ time-stamp@1.1.0
+├─ tmp@0.0.33
+├─ tmpl@1.0.4
+├─ to-fast-properties@2.0.0
+├─ to-object-path@0.3.0
+├─ to-regex-range@2.1.1
+├─ toidentifier@1.0.0
+├─ trim-right@1.0.1
+├─ type-fest@0.3.1
+├─ typedarray@0.0.6
+├─ uglify-es@3.3.9
+├─ ultron@1.0.2
+├─ unicode-canonical-property-names-ecmascript@1.0.4
+├─ unicode-match-property-ecmascript@1.0.4
+├─ unicode-match-property-value-ecmascript@1.1.0
+├─ unicode-property-aliases-ecmascript@1.0.5
+├─ union-value@1.0.1
+├─ universalify@0.1.2
+├─ unpipe@1.0.0
+├─ unset-value@1.0.0
+├─ urix@0.1.0
+├─ use@3.1.1
+├─ util-deprecate@1.0.2
+├─ utils-merge@1.0.1
+├─ uuid@3.3.2
+├─ validate-npm-package-license@3.0.4
+├─ vary@1.1.2
+├─ walker@1.0.7
+├─ wcwidth@1.0.1
+├─ whatwg-fetch@3.0.0
+├─ which@1.3.1
+├─ write-file-atomic@1.3.4
+├─ xcode@2.0.0
+├─ xmlbuilder@9.0.7
+├─ xmldoc@1.1.2
+├─ xmldom@0.1.27
+├─ xpipe@1.0.5
+├─ xtend@4.0.2
+├─ y18n@3.2.1
+├─ yallist@3.0.3
+└─ yargs-parser@7.0.0
+Done in 113.85s.
+info Setting up new React Native app in C:\Users\celo_\Documents\GitHub\Omnisteck8.0\tindev\mobiletindev
+info Adding required dependencies
+yarn add v1.16.0
+[1/4] Resolving packages...
+warning jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > left-pad@1.3.0: use String.prototype.padStart()
+[2/4] Fetching packages...
+info fsevents@1.2.9: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.9" is an optional dependency and failed compatibility check. Excluding it from installation.
+[3/4] Linking dependencies...
+warning " > @react-native-community/eslint-config@0.0.3" has unmet peer dependency "eslint@>=5".
+warning "@react-native-community/eslint-config > babel-eslint@10.0.1" has unmet peer dependency "eslint@>= 4.12.1".
+warning "@react-native-community/eslint-config > eslint-plugin-eslint-comments@3.1.2" has unmet peer dependency "eslint@>=4.19.1".
+warning "@react-native-community/eslint-config > eslint-plugin-react-native@3.6.0" has unmet peer dependency "eslint@^3.17.0 || ^4 || ^5".
+warning "@react-native-community/eslint-config > eslint-plugin-react-hooks@1.7.0" has unmet peer dependency "eslint@^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0".
+warning "@react-native-community/eslint-config > eslint-plugin-jest@22.4.1" has unmet peer dependency "eslint@>=5".
+warning "@react-native-community/eslint-config > eslint-plugin-react@7.12.4" has unmet peer dependency "eslint@^3.0.0 || ^4.0.0 || ^5.0.0".
+warning "@react-native-community/eslint-config > eslint-plugin-flowtype@2.50.3" has unmet peer dependency "eslint@>=2.0.0".
+[4/4] Building fresh packages...
+success Saved lockfile.
+success Saved 142 new dependencies.
+info Direct dependencies
+├─ @react-native-community/eslint-config@0.0.3
+├─ babel-jest@24.8.0
+├─ jest@24.8.0
+├─ react-test-renderer@16.8.6
+└─ react@16.8.6
+info All dependencies
+├─ @jest/core@24.8.0
+├─ @jest/reporters@24.8.0
+├─ @jest/test-sequencer@24.8.0
+├─ @react-native-community/eslint-config@0.0.3
+├─ @types/babel__core@7.1.2
+├─ @types/babel__generator@7.0.2
+├─ @types/babel__template@7.0.2
+├─ @types/babel__traverse@7.0.7
+├─ acorn-globals@4.3.3
+├─ acorn-walk@6.2.0
+├─ acorn@5.7.3
+├─ ajv@6.10.2
+├─ array-equal@1.0.0
+├─ asn1@0.2.4
+├─ asynckit@0.4.0
+├─ aws-sign2@0.7.0
+├─ aws4@1.8.0
+├─ babel-eslint@10.0.1
+├─ babel-jest@24.8.0
+├─ babel-plugin-jest-hoist@24.6.0
+├─ babel-preset-jest@24.6.0
+├─ bcrypt-pbkdf@1.0.2
+├─ browser-process-hrtime@0.1.3
+├─ browser-resolve@1.11.3
+├─ caseless@0.12.0
+├─ co@4.6.0
+├─ combined-stream@1.0.8
+├─ cssom@0.3.8
+├─ cssstyle@1.4.0
+├─ dashdash@1.14.1
+├─ data-urls@1.1.0
+├─ deep-is@0.1.3
+├─ delayed-stream@1.0.0
+├─ detect-newline@2.1.0
+├─ diff-sequences@24.3.0
+├─ doctrine@2.1.0
+├─ domexception@1.0.1
+├─ ecc-jsbn@0.1.2
+├─ es-abstract@1.13.0
+├─ es-to-primitive@1.2.0
+├─ escodegen@1.11.1
+├─ eslint-plugin-eslint-comments@3.1.2
+├─ eslint-plugin-flowtype@2.50.3
+├─ eslint-plugin-jest@22.4.1
+├─ eslint-plugin-prettier@2.6.2
+├─ eslint-plugin-react-hooks@1.7.0
+├─ eslint-plugin-react-native-globals@0.1.2
+├─ eslint-plugin-react-native@3.6.0
+├─ eslint-plugin-react@7.12.4
+├─ eslint-scope@3.7.1
+├─ eslint-visitor-keys@1.0.0
+├─ esrecurse@4.2.1
+├─ estraverse@4.2.0
+├─ extend@3.0.2
+├─ extsprintf@1.3.0
+├─ fast-deep-equal@2.0.1
+├─ fast-diff@1.2.0
+├─ fast-levenshtein@2.0.6
+├─ forever-agent@0.6.1
+├─ form-data@2.3.3
+├─ getpass@0.1.7
+├─ handlebars@4.1.2
+├─ har-schema@2.0.0
+├─ har-validator@5.1.3
+├─ html-encoding-sniffer@1.0.2
+├─ http-signature@1.2.0
+├─ ignore@5.1.2
+├─ is-date-object@1.0.1
+├─ is-generator-fn@2.1.0
+├─ is-regex@1.0.4
+├─ is-symbol@1.0.2
+├─ is-typedarray@1.0.0
+├─ isstream@0.1.2
+├─ istanbul-lib-instrument@3.3.0
+├─ istanbul-lib-report@2.0.8
+├─ istanbul-lib-source-maps@3.0.6
+├─ istanbul-reports@2.2.6
+├─ jest-changed-files@24.8.0
+├─ jest-cli@24.8.0
+├─ jest-docblock@21.2.0
+├─ jest-each@24.8.0
+├─ jest-environment-jsdom@24.8.0
+├─ jest-environment-node@24.8.0
+├─ jest-leak-detector@24.8.0
+├─ jest-pnp-resolver@1.2.1
+├─ jest-resolve-dependencies@24.8.0
+├─ jest-watcher@24.8.0
+├─ jest@24.8.0
+├─ jsdom@11.12.0
+├─ json-schema-traverse@0.4.1
+├─ json-schema@0.2.3
+├─ json-stringify-safe@5.0.1
+├─ jsprim@1.4.1
+├─ jsx-ast-utils@2.2.1
+├─ kleur@3.0.3
+├─ left-pad@1.3.0
+├─ levn@0.3.0
+├─ load-json-file@4.0.0
+├─ natural-compare@1.4.0
+├─ neo-async@2.6.1
+├─ nwsapi@2.1.4
+├─ oauth-sign@0.9.0
+├─ object.fromentries@2.0.0
+├─ object.getownpropertydescriptors@2.0.3
+├─ optimist@0.6.1
+├─ optionator@0.8.2
+├─ p-each-series@1.0.0
+├─ p-reduce@1.0.0
+├─ parse5@4.0.0
+├─ path-type@3.0.0
+├─ performance-now@2.1.0
+├─ pn@1.1.0
+├─ prettier@1.16.4
+├─ prompts@2.2.1
+├─ psl@1.3.0
+├─ qs@6.5.2
+├─ react-test-renderer@16.8.6
+├─ react@16.8.6
+├─ read-pkg-up@4.0.0
+├─ read-pkg@3.0.0
+├─ request-promise-core@1.1.2
+├─ request-promise-native@1.0.7
+├─ request@2.88.0
+├─ resolve-cwd@2.0.0
+├─ sisteransi@1.0.3
+├─ sshpk@1.16.1
+├─ stealthy-require@1.1.1
+├─ symbol-tree@3.2.4
+├─ test-exclude@5.2.3
+├─ tough-cookie@2.5.0
+├─ tunnel-agent@0.6.0
+├─ tweetnacl@0.14.5
+├─ uglify-js@3.6.0
+├─ uri-js@4.2.2
+├─ util.promisify@1.0.0
+├─ verror@1.10.0
+├─ w3c-hr-time@1.0.1
+├─ whatwg-encoding@1.0.5
+├─ whatwg-mimetype@2.3.0
+├─ whatwg-url@6.5.0
+├─ write-file-atomic@2.4.1
+└─ xml-name-validator@3.0.0
+Done in 51.19s.
+info Adding required dev dependencies
+yarn add v1.16.0
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+warning Pattern ["@babel/core@^7.5.5"] is trying to unpack in the same destination "C:\\Users\\celo_\\AppData\\Local\\Yarn\\Cache\\v4\\npm-@babel-core-7.5.5-17b2686ef0d6bc58f963dddd68ab669755582c30\\node_modules\\@babel\\core" as pattern ["@babel/core@^7.0.0","@babel/core@^7.0.0","@babel/core@^7.0.0","@babel/core@^7.0.0","@babel/core@^7.0.0","@babel/core@^7.1.0","@babel/core@^7.1.0"]. This could result in non-deterministic behavior, skipping.
+warning Pattern ["@babel/runtime@^7.5.5"] is trying to unpack in the same destination "C:\\Users\\celo_\\AppData\\Local\\Yarn\\Cache\\v4\\npm-@babel-runtime-7.5.5-74fba56d35efbeca444091c7850ccd494fd2f132\\node_modules\\@babel\\runtime" as pattern ["@babel/runtime@^7.0.0"]. This could result in non-deterministic behavior, skipping.
+info fsevents@1.2.9: The platform "win32" is incompatible with this module.
+info "fsevents@1.2.9" is an optional dependency and failed compatibility check. Excluding it from installation.
+[3/4] Linking dependencies...
+warning "@react-native-community/eslint-config > eslint-plugin-react@7.12.4" has incorrect peer dependency "eslint@^3.0.0 || ^4.0.0 || ^5.0.0".
+warning "@react-native-community/eslint-config > eslint-plugin-react-native@3.6.0" has incorrect peer dependency "eslint@^3.17.0 || ^4 || ^5".
+warning "@react-native-community/eslint-config > @typescript-eslint/eslint-plugin@1.13.0" has incorrect peer dependency "eslint@^5.0.0".
+warning "@react-native-community/eslint-config > @typescript-eslint/parser@1.13.0" has incorrect peer dependency "eslint@^5.0.0".
+warning "@react-native-community/eslint-config > @typescript-eslint/eslint-plugin > tsutils@3.17.1" has unmet peer dependency "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta".
+[4/4] Building fresh packages...
+success Saved lockfile.
+success Saved 45 new dependencies.
+info Direct dependencies
+├─ @babel/core@7.5.5
+├─ @babel/runtime@7.5.5
+├─ @react-native-community/eslint-config@0.0.5
+├─ babel-jest@24.8.0
+├─ eslint@6.1.0
+├─ jest@24.8.0
+└─ metro-react-native-babel-preset@0.55.0
+info All dependencies
+├─ @babel/core@7.5.5
+├─ @babel/runtime@7.5.5
+├─ @react-native-community/eslint-config@0.0.5
+├─ @types/eslint-visitor-keys@1.0.0
+├─ @types/json-schema@7.0.3
+├─ @typescript-eslint/eslint-plugin@1.13.0
+├─ @typescript-eslint/parser@1.13.0
+├─ acorn-jsx@5.0.1
+├─ acorn@6.2.1
+├─ ajv@6.10.2
+├─ babel-jest@24.8.0
+├─ chardet@0.7.0
+├─ doctrine@3.0.0
+├─ emoji-regex@7.0.3
+├─ eslint-scope@5.0.0
+├─ eslint@6.1.0
+├─ espree@6.0.0
+├─ esquery@1.0.1
+├─ external-editor@3.1.0
+├─ file-entry-cache@5.0.1
+├─ flat-cache@2.0.1
+├─ flatted@2.0.1
+├─ glob-parent@5.0.0
+├─ ignore@4.0.6
+├─ import-fresh@3.1.0
+├─ inquirer@6.5.0
+├─ is-extglob@2.1.1
+├─ is-glob@4.0.1
+├─ jest@24.8.0
+├─ json-stable-stringify-without-jsonify@1.0.1
+├─ levn@0.3.0
+├─ lodash.unescape@4.0.1
+├─ metro-react-native-babel-preset@0.55.0
+├─ optionator@0.8.2
+├─ parent-module@1.0.1
+├─ progress@2.0.3
+├─ react-refresh@0.2.0
+├─ rxjs@6.5.2
+├─ strip-json-comments@3.0.1
+├─ table@5.4.5
+├─ text-table@0.2.0
+├─ tslib@1.10.0
+├─ tsutils@3.17.1
+├─ v8-compile-cache@2.1.0
+└─ write@1.0.3
+Done in 55.30s.
+
+  Run instructions for iOS:
+    • cd mobiletindev && react-native run-ios
+    - or -
+    • Open mobiletindev\ios\mobiletindev.xcodeproj in Xcode or run "xed -b ios"
+    • Hit the Run button
+
+  Run instructions for Android:
+    • Have an Android emulator running (quickest way to get started), or a device connected.
+    • cd mobiletindev && react-native run-android
+
+PS C:\Users\celo_\Documents\GitHub\Omnisteck8.0\tindev>
